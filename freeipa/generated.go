@@ -105202,6 +105202,7 @@ func (out *User) UnmarshalJSON(data []byte) error {
         return fmt.Errorf("unexpected value for field Krbpasswordexpiration: %v (%v)", raw, reflect.TypeOf(raw))
       }
     
+
   }
   
   if in.Mail != nil {
@@ -105244,7 +105245,7 @@ func (out *User) UnmarshalJSON(data []byte) error {
     sliceOk := sliceWrapperOk
     if sliceWrapperOk {
       for _, rawItem := range sliceWrapperV {
-        
+
         itemV, itemOk := rawItem.(string)
         
         if !itemOk {
